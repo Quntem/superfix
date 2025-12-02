@@ -1,3 +1,4 @@
+"use client";
 import logoLight from '../public/logo_light.svg';
 import logoDark from '../public/logo_dark.svg';
 

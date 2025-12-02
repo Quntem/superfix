@@ -3,7 +3,8 @@
 :root {
   --background: #f1f1f1;
   --foreground: #1b1b1b;
-  --lesser-background: #d8d8d8;
+  --lesser-background-50: #e7e7e7;
+  --lesser-background-100: #d8d8d8;
 }
 
 @theme inline {
@@ -17,7 +18,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --lesser-background: #1d1d1d;
+    --lesser-background-50: #0e0e0e;
+    --lesser-background-100: #1d1d1d;
   }
 }
 
@@ -25,4 +27,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-item {
+  cursor: pointer;
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 3);
+  margin-right: calc(var(--spacing) * 4);
+  border-radius: 10%;
+  transition: all 300ms ease;
+}
+
+.sidebar-item:not(.sidebar-item-active):hover {
+  background: var(--lesser-background-50)
+}
+
+.sidebar-item-active {
+  background: var(--lesser-background-100);
 }
