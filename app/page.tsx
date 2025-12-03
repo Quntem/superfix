@@ -7,6 +7,13 @@ export default function Home() {
       <Header/>
       <hr className="border"></hr>
       <Navigation/>
+      <h1 className="text-3xl font-medium">A <Semibold text="versatile"></Semibold> and <Semibold text="professional"></Semibold> bug tracker</h1>
     </div>
   );
+}
+
+function Semibold({ text }: { text: string }) {
+  return (
+    <span className="font-semibold">{text}</span>
+  )
 }
