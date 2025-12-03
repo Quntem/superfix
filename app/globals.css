@@ -5,6 +5,7 @@
   --foreground: #1b1b1b;
   --lesser-background-50: #e7e7e7;
   --lesser-background-100: #d8d8d8;
+  --accent: #0b4bd4;
 }
 
 @theme inline {
@@ -20,6 +21,7 @@
     --foreground: #ededed;
     --lesser-background-50: #0e0e0e;
     --lesser-background-100: #1d1d1d;
+    --accent: #2c6bf5;
   }
 }
 
@@ -27,6 +29,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  color: var(--accent);
 }
 
 .sidebar-item {

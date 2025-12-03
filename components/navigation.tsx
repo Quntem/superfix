@@ -5,7 +5,7 @@ export default function Navigation() {
   const path = usePathname();
   const router = useRouter();
   return (
-    <nav className="[&>button]:mr-4 [&>button:active]:bg-(--lesser-background)">
+    <nav>
       <SidebarItem title="Home" onClick={() => {router.push("/")}} onMouseEnter={() => router.prefetch('/')} active={path === "/"}/>
       <SidebarItem title="Pricing" onClick={() => {router.push("/pricing")}} onMouseEnter={() => router.prefetch('/pricing')} active={path === "/pricing"}/>
       <SidebarItem title="Labs" onClick={() => {router.push("/labs")}} onMouseEnter={() => router.prefetch('/labs')} active={path === "/labs"}/>
